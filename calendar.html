@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Weekly Calendar</title>
+<style>
+body { font-family: Arial, sans-serif; background:#f5f5f5; }
+.calendar { display: grid; grid-template-columns: 80px repeat(5, 1fr); height: 1200px; }
+.time-col { border-right:1px solid #ccc; }
+.day-col { border-left:1px solid #ccc; position:relative; }
+.time-label { height:60px; font-size:12px; color:#555; text-align:right; padding-right:10px; border-bottom:1px solid #eee; }
+.class-block { position:absolute; left:10px; right:10px; border-radius:8px; padding:6px; font-size:12px; overflow:hidden; border:1px solid #999; }
+</style>
+</head>
+<body>
+<h1 style='text-align:center;'>Weekly Class Schedule</h1>
+<div class='calendar'>
+<div class='time-col'>
+<div class='time-label'>8:00</div>
+<div class='time-label'>9:00</div>
+<div class='time-label'>10:00</div>
+<div class='time-label'>11:00</div>
+<div class='time-label'>12:00</div>
+<div class='time-label'>13:00</div>
+<div class='time-label'>14:00</div>
+<div class='time-label'>15:00</div>
+<div class='time-label'>16:00</div>
+<div class='time-label'>17:00</div>
+<div class='time-label'>18:00</div>
+<div class='time-label'>19:00</div>
+<div class='time-label'>20:00</div>
+</div>
+<div class='day-col'>
+<div style='text-align:center; background:#eee; padding:4px; font-weight:bold; border-bottom:1px solid #ccc;'>MONDAY</div>
+<div class='class-block' style='top:480px; height:100px; background:#BBDEFB;'>
+<b>CMSC204 (001)</b><br>
+16:00 - 17:40<br>
+Huseyin<br>
+</div>
+</div>
+<div class='day-col'>
+<div style='text-align:center; background:#eee; padding:4px; font-weight:bold; border-bottom:1px solid #ccc;'>TUESDAY</div>
+</div>
+<div class='day-col'>
+<div style='text-align:center; background:#eee; padding:4px; font-weight:bold; border-bottom:1px solid #ccc;'>WEDNESDAY</div>
+<div class='class-block' style='top:480px; height:100px; background:#BBDEFB;'>
+<b>CMSC204 (001)</b><br>
+16:00 - 17:40<br>
+Huseyin<br>
+</div>
+</div>
+<div class='day-col'>
+<div style='text-align:center; background:#eee; padding:4px; font-weight:bold; border-bottom:1px solid #ccc;'>THURSDAY</div>
+</div>
+<div class='day-col'>
+<div style='text-align:center; background:#eee; padding:4px; font-weight:bold; border-bottom:1px solid #ccc;'>FRIDAY</div>
+<div class='class-block' style='top:120px; height:180px; background:#FFCDD2;'>
+<b>CMSC203 (001)</b><br>
+10:00 - 13:00<br>
+Gregory grinberg<br>
+</div>
+</div>
+</div>
+</body>
+</html>
