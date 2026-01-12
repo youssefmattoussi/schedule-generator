@@ -1,0 +1,19 @@
+# Academic Schedule Generator
+
+A Java-based application that generates conflict-free academic schedules based on course availability and time constraints.
+
+## Overview
+This project was built to help students create organized schedules by automatically checking for time conflicts and validating input data. It focuses on clean structure, logical constraints, and usability.
+
+## Features
+- Conflict detection and schedule validation
+- Object-oriented design with modular classes
+- Input validation and error handling
+- Clear separation of logic and data
+
+## Technologies Used
+- Java
+- Object-Oriented Programming principles
+
+## Purpose
+This project demonstrates problem-solving, system organization, and the ability to build tools that improve planning and efficiency.
