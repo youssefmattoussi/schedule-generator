@@ -1,19 +1,29 @@
 # Academic Schedule Generator
 
-A Java-based application that generates conflict-free academic schedules based on course availability and time constraints.
+A Java application that generates a conflict-free academic schedule and selects the best possible option based on student preferences.
 
 ## Overview
-This project was built to help students create organized schedules by automatically checking for time conflicts and validating input data. It focuses on clean structure, logical constraints, and usability.
+This project helps students automatically build class schedules by validating time constraints and resolving conflicts between course sections. When multiple valid schedules exist, the system evaluates them internally and returns the most efficient option for the student.
 
-## Features
-- Conflict detection and schedule validation
-- Object-oriented design with modular classes
-- Input validation and error handling
-- Clear separation of logic and data
+The user always sees a single finalized schedule; alternative schedules are evaluated internally and never exposed.
+
+## Key Features
+- Time conflict detection between course sections
+- Validation of academic constraints (credit limits, time bounds)
+- Internal optimization to prefer more efficient schedules
+- Modular, object-oriented design
+- Console output and HTML calendar export
+
+## How It Works (High Level)
+1. The system generates all valid combinations of course sections.
+2. Invalid schedules are rejected due to time conflicts or constraints.
+3. When more than one valid schedule exists, the system scores them internally based on efficiency factors (such as fewer days on campus).
+4. The highest-scoring schedule is selected and presented to the user.
 
 ## Technologies Used
 - Java
-- Object-Oriented Programming principles
+- Object-Oriented Programming
+- JUnit (logic verification)
 
 ## Purpose
-This project demonstrates problem-solving, system organization, and the ability to build tools that improve planning and efficiency.
+This project demonstrates structured problem-solving, clean system design, and the ability to implement decision logic that scales as problem complexity increases.
